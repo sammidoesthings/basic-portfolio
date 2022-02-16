@@ -1,38 +1,109 @@
-.App {
+.app-container {
   text-align: center;
+  padding: 3vh;
+  font-family: 'Karma', serif;
+  font-size: larger;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* //HEADER STYLING BEGINS// */
+.app-header {
+  padding: 1vh;
+  text-align: flex-start;
+  display: flex;
+  flex-direction: flex-end;
+  background-color: peachpuff;
+  border-radius: 15px;
+  border: 2px solid #2596be;
+  /* position: sticky; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header button {
+  height: 6vh;
+  min-width: 7.5rem;
+  background-color: #bee0ec;
+  border-style: solid;
+  border-color: #2596be;
+  border-radius: 15px;
+  /* border-style: none; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-header .navigation {
+  width: 51%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* background: red; */
+}
+
+.navigation button {
+  margin-right: 1vh;
+  letter-spacing: 0.3rem;
+}
+
+.site-title {
+  width: 49%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5rem;
+  /* background-color: blue; */
+}
+/* //HEADER STYLING ENDS// */
+
+/* //INTRO CARD STYLING BEGINS// */
+
+.intro-card {
+  background: peachpuff;
+  margin: 2vh 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 82vh;
+  border-radius: 25px;
+  border: 2px solid #2596be;
+}
+
+.intro-photo, .intro-about {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  /* border: 3px solid red; */
+  padding: 0 3vh;
 }
 
-.App-link {
-  color: #61dafb;
+.intro-photo img {
+  height: 75vh;
+  border: 2px solid #2596be;
+  border-radius: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro-about {
+  display: flex;
+  justify-content: center;
+  padding: 3vh;
+  line-height: 1.75rem;
+}
+
+.intro-about-text {
+  border: 2px solid #2596be
+  ;
+  height: 75vh;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #bee0ec;
+}
+
+.intro-about h3, p {
+  margin: 0.75rem;
+}
+
+span {
+  font-style: italic;
 }
